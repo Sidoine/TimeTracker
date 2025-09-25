@@ -1,0 +1,96 @@
+/* generated using openapi-typescript-codegen -- do not edit */
+/* istanbul ignore file */
+/* tslint:disable */
+/* eslint-disable */
+export { ApiError } from "./core/ApiError";
+export { CancelablePromise, CancelError } from "./core/CancelablePromise";
+export { OpenAPI } from "./core/OpenAPI";
+export type { OpenAPIConfig } from "./core/OpenAPI";
+
+export type { _count } from "./models/_count";
+export type { _expand } from "./models/_expand";
+export type { _fromCreatedTimestamp } from "./models/_fromCreatedTimestamp";
+export type { _fromTimestamp } from "./models/_fromTimestamp";
+export type { _fromTimestampTimeApproval } from "./models/_fromTimestampTimeApproval";
+export type { _searchFilter } from "./models/_searchFilter";
+export type { _skip } from "./models/_skip";
+export type { _toCreatedTimestamp } from "./models/_toCreatedTimestamp";
+export type { _toTimestamp } from "./models/_toTimestamp";
+export type { _toTimestampTimeApproval } from "./models/_toTimestampTimeApproval";
+export type { _validateOnly } from "./models/_validateOnly";
+export type { _workItemIds } from "./models/_workItemIds";
+export type { account } from "./models/account";
+export type { activityCheckState } from "./models/activityCheckState";
+export type { activityType } from "./models/activityType";
+export type { activityTypeSetting } from "./models/activityTypeSetting";
+export type { activityTypeSettings } from "./models/activityTypeSettings";
+export type { adjustTrackingParameters } from "./models/adjustTrackingParameters";
+export type { advancedSearchFilters } from "./models/advancedSearchFilters";
+export type { api_version } from "./models/api_version";
+export type { budget_id } from "./models/budget_id";
+export { BudgetAssignmentType } from "./models/BudgetAssignmentType";
+export type { collectionName } from "./models/collectionName";
+export type { customFields } from "./models/customFields";
+export type { customFieldsPost } from "./models/customFieldsPost";
+export type { error } from "./models/error";
+export type { expand } from "./models/expand";
+export type { expandPost } from "./models/expandPost";
+export type { includeEditable } from "./models/includeEditable";
+export type { latestWorkLogsModel } from "./models/latestWorkLogsModel";
+export type { pinContext } from "./models/pinContext";
+export { pinStatus } from "./models/pinStatus";
+export type { ReportingActivityType } from "./models/ReportingActivityType";
+export type { ReportingBudget } from "./models/ReportingBudget";
+export type { ReportingBudgetExtended } from "./models/ReportingBudgetExtended";
+export type { ReportingDate } from "./models/ReportingDate";
+export type { ReportingUser } from "./models/ReportingUser";
+export type { ReportingWorkItem } from "./models/ReportingWorkItem";
+export type { ReportingWorkItemDefault } from "./models/ReportingWorkItemDefault";
+export type { ReportingWorkItemFlat } from "./models/ReportingWorkItemFlat";
+export type { ReportingWorkItemHierarchy } from "./models/ReportingWorkItemHierarchy";
+export type { ReportingWorkItemParentDefault } from "./models/ReportingWorkItemParentDefault";
+export type { ReportingWorkItemRootDefault } from "./models/ReportingWorkItemRootDefault";
+export type { ReportingWorkLog } from "./models/ReportingWorkLog";
+export type { ReportingWorkLogWorkItem } from "./models/ReportingWorkLogWorkItem";
+export type { rollupFields } from "./models/rollupFields";
+export type { rollupFieldsPost } from "./models/rollupFieldsPost";
+export type { searchFilterParameter } from "./models/searchFilterParameter";
+export type { searchFilterParameterValue } from "./models/searchFilterParameterValue";
+export type { searchFilters } from "./models/searchFilters";
+export type { searchFilterValues } from "./models/searchFilterValues";
+export type { searchParameters } from "./models/searchParameters";
+export type { searchResultModel } from "./models/searchResultModel";
+export type { selectedParameters } from "./models/selectedParameters";
+export type { sendApprovalWeekModel } from "./models/sendApprovalWeekModel";
+export type { settings } from "./models/settings";
+export type { startTrackingParameters } from "./models/startTrackingParameters";
+export type { system_id } from "./models/system_id";
+export { timeApproval } from "./models/timeApproval";
+export { track } from "./models/track";
+export type { trackingStateModel } from "./models/trackingStateModel";
+export { trackSettings } from "./models/trackSettings";
+export type { user } from "./models/user";
+export type { userInfo } from "./models/userInfo";
+export { userRole } from "./models/userRole";
+export type { usersWithRolePost } from "./models/usersWithRolePost";
+export type { userWithRole } from "./models/userWithRole";
+export type { userWithRolePost } from "./models/userWithRolePost";
+export type { workItem } from "./models/workItem";
+export type { workItemSearch } from "./models/workItemSearch";
+export type { workItemsFilter } from "./models/workItemsFilter";
+export type { workItemsFilterPost } from "./models/workItemsFilterPost";
+export type { workItemsFilterRequired } from "./models/workItemsFilterRequired";
+export type { workItemsFilterRequiredPost } from "./models/workItemsFilterRequiredPost";
+export type { workLog } from "./models/workLog";
+export type { workLog_Tracking_ } from "./models/workLog_Tracking_";
+export type { workLogBatchCreationModel } from "./models/workLogBatchCreationModel";
+export type { workLogCreationModel } from "./models/workLogCreationModel";
+export type { worklogsFilter } from "./models/worklogsFilter";
+export type { worklogsFilterPost } from "./models/worklogsFilterPost";
+
+export { RestCrudService } from "./services/RestCrudService";
+import { OpenAPI } from "./core/OpenAPI";
+export function configureOpenApi(baseUrl: string, token: string) {
+  OpenAPI.BASE = baseUrl;
+  OpenAPI.TOKEN = token;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@7pace/timetracker-api-client",
+  "version": "1.0.0",
+  "description": "Client TypeScript pour l'API 7pace Timetracker.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {}
+}

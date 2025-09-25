@@ -1,0 +1,22 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "autorest": "^3.7.1",
+    "axios": "^1.6.0",
+    "dayjs": "^1.11.13",
+    "openapi-typescript-codegen": "^0.29.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "watch": "tsc -p ./tsconfig.json --watch",
+    "build": "tsc -p ./tsconfig.json",
+    "start": "node ./dist/timetracker.js"
+  },
+  "packageManager": "yarn@4.9.1+sha512.f95ce356460e05be48d66401c1ae64ef84d163dd689964962c6888a9810865e39097a5e9de748876c2e0bf89b232d583c33982773e9903ae7a76257270986538"
+}
