@@ -4,7 +4,8 @@ import readline from "node:readline/promises";
 import { readFileSync } from "fs";
 
 // Chargement de la configuration depuis config.json
-const config = JSON.parse(readFileSync("config.json", "utf-8"));
+const config: { repoPath: string; baseUrl: string; accessToken: string } =
+  JSON.parse(readFileSync("config.json", "utf-8"));
 
 async function showActivityTypes() {
   const res = await RestCrudService.restActivityTypes();
@@ -103,18 +104,18 @@ async function checkGitCommitForDate(dateStr: string) {
   try {
     const { stdout } = await execAsync(
       `git log --since="${since}" --until="${until}" --author="${userEmail}" --pretty=oneline`,
-      { cwd: "c:/dev/career" }
+      { cwd: config.repoPath }
     );
     if (stdout && stdout.trim().length > 0) {
       console.log(
-        `Commit(s) Git trouvé(s) pour le ${dateStr} dans c:/dev/career par ${userEmail} :`
+        `Commit(s) Git trouvé(s) pour le ${dateStr} dans ${config.repoPath} par ${userEmail} :`
       );
       console.log(stdout);
       await logWorkIn7pace(dateStr);
       return true;
     } else {
       console.log(
-        `Aucun commit Git trouvé pour le ${dateStr} dans c:/dev/career pour l'utilisateur ${userEmail}.`
+        `Aucun commit Git trouvé pour le ${dateStr} dans ${config.repoPath} pour l'utilisateur ${userEmail}.`
       );
       const rl = readline.createInterface({
         input: process.stdin,
