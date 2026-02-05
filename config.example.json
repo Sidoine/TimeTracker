@@ -1,5 +1,11 @@
 {
   "baseUrl": "https://cegid.timehub.7pace.com/",
   "accessToken": "VOTRE_TOKEN_7PACE_ICI",
-  "repoPath": "c:/dev/career"
+  "repoPaths": [
+    "c:/dev/career",
+    "c:/dev/match",
+    "c:/dev/tools",
+    "c:/dev/skills"
+  ],
+  "workItemId": 1789010
 }
